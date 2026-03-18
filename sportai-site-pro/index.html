@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>SportAI Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>SportAI</h1>
+  <button onclick="startQuiz()">Trouver mon produit</button>
+</header>
+
+<section class="hero">
+  <h2>Le vendeur sportif intelligent</h2>
+  <p>Analyse ton besoin et trouve la chaussure parfaite</p>
+</section>
+
+<section id="quiz" class="hidden">
+  <h2>Analyse IA</h2>
+
+  <label>Sport :</label>
+  <select id="sport">
+    <option value="running">Running</option>
+    <option value="padel">Padel</option>
+  </select>
+
+  <label>Niveau :</label>
+  <select id="level">
+    <option value="debutant">Débutant</option>
+    <option value="intermediaire">Intermédiaire</option>
+  </select>
+
+  <label>Douleur :</label>
+  <input type="text" id="pain" placeholder="Genou, cheville...">
+
+  <label>Photo du pied :</label>
+  <input type="file">
+
+  <button onclick="analyze()">Analyser</button>
+</section>
+
+<section id="results" class="hidden">
+  <h2>Recommandation IA</h2>
+  <div id="recommendation"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
